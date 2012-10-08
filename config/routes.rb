@@ -1,5 +1,11 @@
 BookmarkApp::Application.routes.draw do
+  get "static_bookmarks/home"
+
+  get "static_bookmarks/help"
+
   resources :bookmarks
+
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

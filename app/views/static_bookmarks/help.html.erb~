@@ -1,2 +1,4 @@
-<h1>StaticBookmarks#help</h1>
-<p>Find me in app/views/static_bookmarks/help.html.erb</p>
+<h1>Help</h1>
+<p>
+  This is the help page for the Bookmark application.
+</p>

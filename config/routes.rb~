@@ -1,7 +1,7 @@
 BookmarkApp::Application.routes.draw do
-  root to: "static_bookmarks#home"
+  get "static_bookmarks/home"
 
-  match '/help',  to: 'static_bookmarks#help'
+  get "static_bookmarks/help"
 
   resources :bookmarks
 

@@ -1,9 +1,19 @@
 require 'spec_helper'
 
-describe "Bookmarks" do
-  describe "bookmarks" do
-      it "should have the content 'Listing bookmarks'" do
-         # page.should have_content('Listing bookmarks')
+describe "Bookmark App" do
+    
+    describe "Home page" do
+        it "should have the content 'Bookmark App'" do
+             visit '/'
+             page.should have_content('Bookmark App')
+    end
+    end
+  
+  describe "Help page" do
+      it "should have the content 'Help'" do
+          visit '/help'
+          page.should have_content('Help')
+ 
     end
   end
 end

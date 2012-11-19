@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: bookmarks
+#
+#  id         :integer          not null, primary key
+#  URL        :string(255)
+#  Name       :string(255)
+#  Date_saved :datetime
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Bookmark < ActiveRecord::Base
   attr_accessible :Date_saved, :Name, :URL
+  
+  belongs_to :user
+  validates :URL, :length => { :maximum => 10}
+  validates :Name, :length => { :maximum => 99}
 end

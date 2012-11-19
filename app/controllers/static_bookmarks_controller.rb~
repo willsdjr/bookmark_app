@@ -1,0 +1,18 @@
+class StaticBookmarksController < ApplicationController
+    
+    def home
+    end
+    
+  def signup
+  end
+  
+  def signin
+  end
+  
+  
+  def searchbox
+  end
+
+  def help
+  end
+end

@@ -1,10 +1,16 @@
 BookmarkApp::Application.routes.draw do
-  root to: "static_bookmarks#home"
-
-  match '/help',  to: 'static_bookmarks#help'
-
-  resources :bookmarks
-
+    resources :users
+    resources :sessions, only: [:new, :create, :destroy]
+    resources :bookmarks
+   
+    #root to: "static_bookmarks#home"
+    root to: 'sessions#new'
+    match '/searchbox', to: 'static_bookmarks#searchbox'
+    match '/signup',  to: 'users#new'
+    match '/signin', to: 'sessions#new'
+    match '/help',  to: 'static_bookmarks#help'
+ 
+ 
 
 
   # The priority is based upon order of creation:

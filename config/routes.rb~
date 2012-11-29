@@ -8,6 +8,7 @@ BookmarkApp::Application.routes.draw do
     match '/searchbox', to: 'static_bookmarks#searchbox'
     match '/signup',  to: 'users#new'
     match '/signin', to: 'sessions#new'
+    match '/signout', to: 'sessions#destroy', via: :delete
     match '/help',  to: 'static_bookmarks#help'
  
  

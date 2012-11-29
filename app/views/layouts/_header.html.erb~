@@ -4,11 +4,14 @@
           <%= link_to "bookmark app", '#', id: "logo" %>
           <nav>
             <ul class="nav pull-right">
-              <!--<li><%= link_to "Home",    '/signin' %></li>-->
-              <li><%= link_to "Sign up",    '/' %></li>
+              <li><%= link_to "Home",    '/signin' %></li>
+              <li><%= link_to "Sign up",    '/signup' %></li>
               <li><%= link_to "Help",    '/help' %></li>
-              <!-- <li><%= link_to "Sign in",    '/signin' %></li>-->
               <li><%= link_to "Searchbox", '/searchbox' %></li>
+           
+           <!-- <li><%= link_to "Sign in", signin_path %></li>-->
+          
+              
             </ul>
           </nav>
         </div>

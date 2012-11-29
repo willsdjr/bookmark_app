@@ -4,10 +4,11 @@ BookmarkApp::Application.routes.draw do
     resources :bookmarks
    
     #root to: "static_bookmarks#home"
-    root to: 'sessions#new'
+    root to: 'static_bookmarks#home'
     match '/searchbox', to: 'static_bookmarks#searchbox'
     match '/signup',  to: 'users#new'
     match '/signin', to: 'sessions#new'
+    match '/signout', to: 'sessions#destroy', via: :delete
     match '/help',  to: 'static_bookmarks#help'
  
  
